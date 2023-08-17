@@ -6,8 +6,8 @@ async function main() {
   console.log("Deploying contract with acconut: ", deployer.address);
   console.log("Account balance: ", (await deployer.getBalance()).toString());
 
-  const MacVenturesToken = await hre.ethers.getContractFactory("CarbonChainToken");
-  const token = await MacVenturesToken.deploy(50000);
+  const Erc20_Token = await hre.ethers.getContractFactory("CarbonChainToken");
+  const token = await Erc20_Token.deploy(50000);
 
   await token.deployed();
 

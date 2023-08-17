@@ -1,13 +1,23 @@
-# Sample Hardhat Project
+# Create Your Custom ERC20 Token
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates the process to create your very own custom ERC20 Tokens using the HardHat Framework. Here, the project will be built on the Ethereum Network ( more precisely the SEPOLIA TEST NETWORK ).
 
-Try running some of the following tasks:
+Here I have used Alchemy as the node provider.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+
+To deploy the contract for token creation, run:
+
 ```
+main.js
+```
+
+To interact with the deployed contract, run:
+
+```
+interact.js
+```
+# Required modules:
+
+- @openzeppelin
+- @nomicfoundation
+
